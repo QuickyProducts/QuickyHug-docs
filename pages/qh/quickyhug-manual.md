@@ -57,6 +57,7 @@ The button row is always visible while the HUD is switched on, with or without a
 13. **Poses**: opens the pose menu. Without a hug, choosing a pose starts one (see above).
 14. **Turn right**: turns you 10° to the right.
 15. **Power**: switches the HUD off. A running hug ends, and only one round button with the hug symbol stays. Click it to switch the HUD on again.
+{: start="12"}
 
 ## The HUD during a hug
 
