@@ -24,6 +24,8 @@ For the best result, read [Recommended viewer settings](quickyhug-viewer-setting
 2. If your last partner is still near you, the hug starts with them. Otherwise a list of people within 20 m opens: choose your partner.
 3. Your partner gets a permission request to be animated. Once they accept, the hug starts and the full HUD opens.
 
+Each of you plays one animation of the pose. The HUD picks who plays which when the hug starts; **Swap** (4) trades them any time. Hugs between any two avatars work the same way.
+
 Your partner does not need a HUD. If they don't answer the request, they get a short reminder after 20 seconds.
 
 {% include tip.html content="When the hug starts, your partner gets a chat hint: they can type <code>/11 pose</code> to choose a pose themselves and <code>/11 stop</code> to end the hug." %}
@@ -137,7 +139,7 @@ Every move with the arrows (5, 6) and every turn (12, 14) is saved automatically
 
 **Settings > Reset Pos** forgets both and goes back to the creator's default for this pose.
 
-{% include note.html content="Positions are stored for your role in the pose. When you swap (4), the HUD works out the matching position for the other side." %}
+{% include note.html content="Positions are stored for the animation you play. When you swap (4), the HUD works out the matching position for the other animation." %}
 
 ## Settings dialog
 
