@@ -84,7 +84,7 @@ Open the menu you want to change and click **[POSES]**.
 | New Menu | a submenu inside the menu you are in |
 | Rename Menu / Delete Menu | the menu you are in. Deleting moves its poses and submenus one level up. |
 | Load Card | reads the `QH-Menu` notecard in the HUD |
-| Info | versions in chat |
+| Help | the help dialog: manual, support and versions, see [Help](quickyhug-manual.html#help) |
 
 ## Menu notecard `QH-Menu`
 

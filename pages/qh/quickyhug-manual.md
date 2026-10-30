@@ -105,7 +105,7 @@ While you hug, the control cross opens below the button row. The numbers match t
 5. **Move**: moves you forward, back, left and right, as seen from your camera. The three arrows per direction move 1 cm, 5 cm and 10 cm (the outer arrow moves furthest).
 6. **Up / down**: raises or lowers you in the same three steps.
 7. **End hug**: ends the hug. The HUD stays switched on.
-8. **Info**: lists the HUD's scripts and versions in chat. Useful when you ask for support.
+8. **Help**: opens the help dialog, see [Help](#help).
 9. **Settings**: see [Settings dialog](#settings-dialog).
 10. **Size + / −**: makes the whole HUD bigger or smaller on your screen.
 11. **Minimize**: folds the HUD to a small round button with the hug symbol. The hug keeps running; click the button to open the HUD again.
@@ -114,6 +114,19 @@ While you hug, the control cross opens below the button row. The numbers match t
 <img src="images/QuickyHug-minimized.png" alt="Minimized HUD" width="96" height="96"/>
 <figcaption>Minimized</figcaption>
 </figure>
+
+## Help
+
+The **?** on the HUD (8), the **Help** button in the settings dialog and in the pose edit dialog all open the same help dialog:
+
+| Button | What it does |
+|---|---|
+| Manual | opens this manual in your browser |
+| Marketplace | opens the QuickyHug page on the Second Life Marketplace |
+| Support | opens the Quicky support group. Join it to ask questions. |
+| Info | lists the HUD's scripts and versions in chat. Add these lines when you ask for support. |
+
+<!-- TODO: Marketplace-Button erscheint erst, wenn HELP_URL_MP in hudcontrol gesetzt ist. -->
 
 ## Adjusting your position
 
@@ -135,9 +148,9 @@ Every move with the arrows (5, 6) and every turn (12, 14) is saved automatically
 | Switch Lead | your partner leads and you follow them, or back (see below) |
 | SWAP | same as 4 |
 | Add Pose / Delete Pose / Rename Pose | manage poses, see [Poses and menus](quickyhug-poses.html) |
-| Version | same as 8 |
+| Help | same as 8 |
 
-Without a hug the dialog only shows the pose buttons and Version.
+Without a hug the dialog only shows the pose buttons and Help.
 
 ## Switch Lead: let your partner walk
 
@@ -170,4 +183,4 @@ When you start a hug while sitting, the HUD only plays the animations: no follow
 | Small turns only show after several clicks | Set the debug setting from [Recommended viewer settings](quickyhug-viewer-settings.html). |
 | You are pushed away from your partner | Move up a few centimetres (6). Very tall avatars can still bump into each other. |
 | The animations drift apart | Click Resync (3). |
-| Anything else | Click Info (8) and send the chat lines with your question. |
+| Anything else | Click **Help (8) > Info** and send the chat lines with your question. |

@@ -41,7 +41,7 @@ With RLV the HUD also turns you through RLV. It only uses these two commands: ho
 
 The official **Second Life Viewer** has no RLV. QuickyHug still works there, with the lowering animation.
 
-To check: click **Info** on the HUD during a hug. The line of `[QH]follow` says `lowering: RLV hover` when RLV is used.
+To check: click **? > Info** on the HUD during a hug. The line of `[QH]follow` says `lowering: RLV hover` when RLV is used.
 
 ## Small turns
 
