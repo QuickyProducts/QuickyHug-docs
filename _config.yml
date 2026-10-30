@@ -1,0 +1,121 @@
+repository: QuickyProducts/QuickyHug-docs
+
+# project-pages: served from https://quickyproducts.github.io/QuickyHug-docs/
+baseurl: /QuickyHug-docs
+
+output: web
+# this property is useful for conditional filtering of content that is separate from the PDF.
+
+topnav_title: QuickyHug documentation
+# this appears on the top navigation bar next to the home button
+
+site_title: QuickyHug documentation
+# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+company_name: QuickyProducts
+# this appears in the footer
+
+github_editme_path: QuickyProducts/QuickyHug-docs/edit/devel/
+# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+
+disqus_shortname:
+# if you're using disqus for comments, add the shortname here. if not, leave this value blank.
+
+google_analytics:
+# if you have google-analytics ID, put it in. if not, edit this value to blank.
+
+host: 127.0.0.1
+# the preview server used. Leave as is.
+
+port: 4000
+# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
+
+exclude:
+  - .idea/
+  - .gitignore
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - update.sh
+# these are the files and directories that jekyll will exclude from the build
+
+feedback_subject_line: QuickyHug documentation
+
+feedback_email:
+# used as a contact email for the Feedback link in the top navigation bar
+
+feedback_disable: false
+# if you uncomment the previous line, the Feedback link gets removed
+
+# feedback_text: "Need help?"
+# if you uncomment the previous line, it changes the Feedback text
+
+feedback_link: "https://github.com/QuickyProducts/QuickyHug-docs/issues"
+# if you uncomment the previous line, it changes where the feedback link points to
+
+highlighter: rouge
+# library used for syntax highlighting
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
+
+plugins:
+  - jekyll-redirect-from
+# Lets a renamed page keep its old address alive via `redirect_from:` in the
+# page's front matter. Already bundled with the github-pages gem, it only
+# needed switching on. Note the key: `plugins:` is the Jekyll 3.5+ spelling
+# and what GitHub Pages builds with; the pinned Gemfile.lock in this repo is
+# far older (Jekyll 3.3.1), where it was still called `gems:`, so a LOCAL
+# build ignores this until someone runs `bundle update`. The live site is
+# unaffected by that lock.
+
+collections: {}
+# collections are declared here. this renders the content in _xxxx and processes it, but doesn't output it as actual files in the output unless you change output to true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      tooltip: true
+
+
+# these are defaults used for the frontmatter for these file types
+
+sidebars:
+- home_sidebar
+
+description: "QuickyHug: a hug HUD for two avatars in Second Life. User manual."
+# the description is used in the feed.xml file
+
+# needed for sitemap.xml file only
+url: https://quickyproducts.github.io
+
+# Site variables
+sl_website: https://secondlife.com
+quickysitter_docs: https://quickyproducts.github.io/QuickySitter-docs/
+marketplace:
+inworld:
+
+# Theme is the Documentation Theme for Jekyll by Tom Johnson (MIT).
+# TODO: license of the documentation text (see README).

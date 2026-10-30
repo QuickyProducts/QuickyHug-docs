@@ -1,0 +1,23 @@
+# QuickyHug sidebar
+
+entries:
+- title: Sidebar
+  product: QuickyHug
+  levels: one
+  folders:
+
+  - title: QuickyHug
+    output: web
+    folderitems:
+    - title: HUD Manual
+      url: /quickyhug-manual.html
+      output: web
+    - title: Recommended Viewer Settings
+      url: /quickyhug-viewer-settings.html
+      output: web
+    - title: Poses and Menus
+      url: /quickyhug-poses.html
+      output: web
+    - title: Updating to a New HUD
+      url: /quickyhug-update.html
+      output: web

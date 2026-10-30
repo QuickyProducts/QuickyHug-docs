@@ -1,0 +1,24 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Support
+      url: support.html
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Links
+      folderitems:
+        - title: HUD Manual
+          url: /quickyhug-manual.html
+        - title: Recommended Viewer Settings
+          url: /quickyhug-viewer-settings.html
+        - title: Poses and Menus
+          url: /quickyhug-poses.html
+        - title: Updating to a New HUD
+          url: /quickyhug-update.html
+        - title: QuickySitter Documentation
+          external_url: https://quickyproducts.github.io/QuickySitter-docs/
