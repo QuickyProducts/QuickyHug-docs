@@ -50,7 +50,7 @@ The easiest way. The box finds out which animation is whose and adds the pose fo
 2. **Waiting**: the box is matt while it is empty. With one animation, two sides light up. The floating text counts the animations (`1/2`) and the minutes until the box cleans itself up.
 3. **Ready**: with two animations the whole box glows. Touch it.
 
-**Which animation is whose:** the box sorts the two animations by their names (`male` / `female` anywhere in the name, or an ending `-m` / `-f`). If the names don't tell, it asks which animation is your hug partner's. Who plays which in the hug, the HUD decides when the hug starts, and **Swap** trades them any time.
+**Which animation is whose:** the box sorts the two animations by their names (`male` / `female` anywhere in the name, or an ending `-m` / `-f`). If the names don't tell, it asks which animation is your hug partner's. In the hug you play yours and your partner the other one; **Swap** trades them any time.
 
 **Good to know**
 
@@ -107,7 +107,7 @@ cuddle
 |---|---|
 | `[path]` | a menu, submenus separated by `/`. Missing menus are created, existing ones are found by name. |
 | `hug1` | a pose by its file name without `-male` / `-female` |
-| `Name = male \| female` | pairs two animations under a name, like Pair Anims. *male* and *female* only name the two animations of the pair; who plays which is decided when the hug starts. |
+| `Name = me \| partner` | pairs two animations under a name, like Pair Anims: first your animation, then your hug partner's. **Swap** trades them during the hug. |
 | `!clear` | removes all menus first, so all poses start in `New*`. Only useful as the first line. |
 
 Without `!clear` the notecard adds to what is there: poses it names move to the end of their menu, everything else stays where it is. For an exact order, start with `!clear` and list every pose.
