@@ -10,13 +10,13 @@ QuickyHug is a hug HUD for two. You wear it, pick a pose and a partner nearby, a
 
 {% include note.html content="Draft. Screens and numbers follow HUD version 1.1." %}
 
+{% include important.html content="Before your first hug, set one debug setting in your viewer: <b>AvatarRotateThresholdSlow = 5</b> (default 60). Without it, small turns only show after several clicks, and you and your partner don't face each other exactly. Press <b>Ctrl + Alt + Shift + S</b>, type <b>Rotate</b> and change the value to <b>5</b>. Your partner should set it too. Step by step and RLV: <a href='quickyhug-viewer-settings.html'>Recommended viewer settings</a>." %}
+
 ## Wearing the HUD
 
 1. Find **QuickyHug HUD** in your inventory and choose **Add** (or **Wear**). It attaches as a HUD.
 2. A new HUD starts switched off: you only see one round button with the hug symbol (two figures with a heart).
 3. Click it to switch the HUD on. The button row appears, and a chat line tells you the next step.
-
-For the best result, read [Recommended viewer settings](quickyhug-viewer-settings.html) once. It explains RLV and one debug setting that makes small turns visible right away.
 
 ## Starting a hug
 

@@ -8,6 +8,8 @@ toc: true
 
 QuickyHug works in every viewer. Two settings make it look better. Both are set once in your own viewer and stay set.
 
+{% include important.html content="Set <b>AvatarRotateThresholdSlow = 5</b> in any case, it takes one minute: <a href='#small-turns'>Small turns</a>. Without it, the turn buttons seem not to work and you and your partner don't face each other exactly." %}
+
 | Setting | Why | Who |
 |---|---|---|
 | [RLV on](#rlv) | the animations keep their full hip movement | the person wearing the HUD |
