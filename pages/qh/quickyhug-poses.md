@@ -82,7 +82,7 @@ Open the menu you want to change and click **[POSES]**.
 | Rename Pose | the name on the button, at most 24 characters. Empty goes back to the file name. |
 | Move Pose | choose a pose, open the target menu and press **[HERE]**. Target `New*` takes it out of all menus. Afterwards the menu you came from opens again, so you can sort many poses in a row. |
 | New Menu | a submenu inside the menu you are in |
-| Rename Menu / Delete Menu | the menu you are in. Deleting moves its poses and submenus one level up. |
+| Rename Menu / Delete Menu | the menu you are in, so they only appear inside a submenu: open the submenu, then **[POSES]**. Deleting moves its poses and submenus one level up. |
 | Load Card | reads the `QH-Menu` notecard in the HUD |
 | Help | the help dialog: manual, support and versions, see [Help](quickyhug-manual.html#help) |
 

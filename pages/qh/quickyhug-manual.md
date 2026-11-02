@@ -14,21 +14,21 @@ QuickyHug is a hug HUD for two. You wear it, pick a pose and a partner nearby, a
 
 1. Find **QuickyHug HUD** in your inventory and choose **Add** (or **Wear**). It attaches as a HUD.
 2. A new HUD starts switched off: you only see one round button with the hug symbol (two figures with a heart).
-3. Click it to switch the HUD on. The button row appears.
+3. Click it to switch the HUD on. The button row appears, and a chat line tells you the next step.
 
 For the best result, read [Recommended viewer settings](quickyhug-viewer-settings.html) once. It explains RLV and one debug setting that makes small turns visible right away.
 
 ## Starting a hug
 
-1. Click **Poses** in the button row (13 in the picture below) and choose a pose.
-2. If your last partner is still near you, the hug starts with them. Otherwise a list of people within 20 m opens: choose your partner.
-3. Your partner gets a permission request to be animated. Once they accept, the hug starts and the full HUD opens.
+1. Click **Poses** (the ☰ button, 13 in the picture below) and choose a pose.
+2. If your last partner is still near you, the pose menu names them ("Choose a pose to hug ...") and the hug starts with them. To hug someone else, click **[PARTNER]** first, then choose the pose. Otherwise a list of people within 20 m opens: choose your partner.
+3. Your partner gets a permission request to be animated. Only once they accept does the hug start: following, lowering, camera and both animations, and the full HUD opens. If they decline or do not answer within about a minute (they get one reminder), there is no hug.
 
 Each of you plays one animation of the pose: you play yours (the one you marked as yours when adding the pose, or the one that fits your avatar), your partner the other one. **Swap** (4) trades them any time. Hugs between any two avatars work the same way.
 
 Your partner does not need a HUD. If they don't answer the request, they get a short reminder after 20 seconds.
 
-{% include tip.html content="When the hug starts, your partner gets a chat hint: they can type <code>/11 pose</code> to choose a pose themselves and <code>/11 stop</code> to end the hug." %}
+{% include tip.html content="When the hug starts, your partner gets a chat hint: they can type <code>/11 pose</code> to choose a pose themselves, <code>/11 adjust</code> to adjust the position and <code>/11 stop</code> to end the hug." %}
 
 ## The button row
 
@@ -102,7 +102,7 @@ While you hug, the control cross opens below the button row. The numbers match t
 
 1. **Poses**: opens the pose menu to change the pose (same as 13). The menu opens on the page of the current pose.
 2. **Partner**: **End Hug** ends the hug, **New Partner** picks someone else nearby with the same pose, **Stop Partner** stops only your partner's animation.
-3. **Resync**: restarts both animations at the same moment. Use it when the two of you drift apart, which happens over time on looped animations.
+3. **Resync**: restarts both animations at the same moment. The HUD does this once by itself, 3 seconds after a hug starts or the pose changes, and after your partner allows the animation. Use it when the two of you drift apart later, which happens over time on looped animations.
 4. **Swap**: you and your partner trade animations.
 5. **Move**: moves you forward, back, left and right, as seen from your camera. The three arrows per direction move 1 cm, 5 cm and 10 cm (the outer arrow moves furthest).
 6. **Up / down**: raises or lowers you in the same three steps.
@@ -169,9 +169,29 @@ Your partner types in local chat:
 | Command | What it does |
 |---|---|
 | `/11 pose` | opens the pose menu for them |
+| `/11 adjust` | opens the adjust menu for them |
 | `/11 stop` | ends the hug |
 
 Only your current partner can use them; anyone else saying them is ignored.
+
+### Adjust menu for your partner
+
+Your partner can fine-tune the hug position themselves, with `/11 adjust` or the **[ADJUST]** button in their pose menu. You get a chat note when they do.
+
+It is laid out like a control pad, the same as the adjust pad of QuickySitter:
+
+| | | |
+|---|---|---|
+| ○ Small step | ● Middle step | ○ Large step |
+| ⇑ Up | ▲ Fwd | ⇓ Down |
+| ◄ Left | ⟳ Resync | Right ► |
+| ↺ Turn + | ▼ Back | Turn - ↻ |
+
+- **Arrows** move relative to your partner's camera, like the arrows on the HUD. The first time, SL asks your partner to allow camera tracking. Without it, the arrows follow the way your partner is facing.
+- **Steps**: small 1 cm, middle 5 cm, large 10 cm. Turning uses the same step: 1, 5 or 10 degrees.
+- **Resync** restarts both animations in sync.
+
+The pad stays open after each click. It closes with the viewer's **Ignore** button, after 60 seconds without a click or when the hug ends. Changes are kept for this partner, just like your own adjustments.
 
 ## Sitting
 
@@ -181,8 +201,9 @@ When you start a hug while sitting, the HUD only plays the animations: no follow
 
 | What you see | What to do |
 |---|---|
-| Your partner is not animated | They have to accept the permission request. Choose **New Partner** and the same person again to ask once more. |
+| The hug does not start | Your partner has to accept the permission request. Start the hug again with the same person to ask once more. |
 | Small turns only show after several clicks | Set the debug setting from [Recommended viewer settings](quickyhug-viewer-settings.html). |
 | You are pushed away from your partner | Move up a few centimetres (6). Very tall avatars can still bump into each other. |
+| "Can't reach the hug position" in chat | Something is in the way, for example a low ceiling or a tall partner avatar. The HUD holds you where you are instead of pushing. Move to a free spot or adjust with the arrows. |
 | The animations drift apart | Click Resync (3). |
 | Anything else | Click **Help (8) > Info** and send the chat lines with your question. |
