@@ -57,6 +57,7 @@ The easiest way. The box finds out which animation is whose and adds the pose fo
 - Without a menu notecard the box takes exactly two animations. Anything else you drop in comes back to you.
 - Animations need copy permission. Second Life does not let a worn HUD take no-copy animations.
 - A worn HUD that you can transfer does not take no-transfer animations either. The box tells you; then rez your HUD on the ground and drag the animations into its contents.
+- **Pose names from the file name:** an animation named `Standing@Name@...` or `Floor@Name@...` gets the pose name `Name` (at most 24 characters). If that name is already taken, a number is added. Everything else keeps its file name until you rename it.
 - Without use, the box deletes itself after 10 minutes and gives back what can't be copied.
 
 ### Many poses at once: menu notecard

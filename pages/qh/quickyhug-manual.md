@@ -168,7 +168,7 @@ Your partner types in local chat:
 
 | Command | What it does |
 |---|---|
-| `/11 pose` | opens the pose menu for them |
+| `/11 pose` | opens the pose menu for them. It stays open after each choice, so they can try several poses; **[CANCEL]** closes it. |
 | `/11 adjust` | opens the adjust menu for them |
 | `/11 stop` | ends the hug |
 
@@ -188,7 +188,7 @@ It is laid out like a control pad, the same as the adjust pad of QuickySitter:
 | ↺ Turn + | ▼ Back | Turn - ↻ |
 
 - **Arrows** move relative to your partner's camera, like the arrows on the HUD. The first time, SL asks your partner to allow camera tracking. Without it, the arrows follow the way your partner is facing.
-- **Steps**: small 1 cm, middle 5 cm, large 10 cm. Turning uses the same step: 1, 5 or 10 degrees.
+- **Steps**: small 1 cm, middle 5 cm, large 10 cm. Turning is always 10 degrees, like the turn buttons of the HUD.
 - **Resync** restarts both animations in sync.
 
 The pad stays open after each click. It closes with the viewer's **Ignore** button, after 60 seconds without a click or when the hug ends. Changes are kept for this partner, just like your own adjustments.
