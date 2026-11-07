@@ -81,6 +81,7 @@ Open the menu you want to change and click **[POSES]**.
 | Add Pose | how to add poses, with **Hug Box** and **Pair Anims** |
 | Delete Pose | removes a pose and its animations (if no other pose uses them). Paired poses can also be **Unpaired**: the animations stay. |
 | Rename Pose | the name on the button, at most 24 characters. Empty goes back to the file name. |
+| Settings | the settings dialog, also without a hug. **PG** there hides the menu named **Adult**. |
 | Move Pose | choose a pose, open the target menu and press **[HERE]**. Target `New*` takes it out of all menus. Afterwards the menu you came from opens again, so you can sort many poses in a row. |
 | New Menu | a submenu inside the menu you are in |
 | Rename Menu / Delete Menu | the menu you are in, so they only appear inside a submenu: open the submenu, then **[POSES]**. Deleting moves its poses and submenus one level up. |

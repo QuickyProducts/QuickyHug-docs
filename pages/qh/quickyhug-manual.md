@@ -21,7 +21,7 @@ QuickyHug is a hug HUD for two. You wear it, pick a pose and a partner nearby, a
 ## Starting a hug
 
 1. Click **Poses** (the ☰ button, 13 in the picture below) and choose a pose.
-2. If your last partner is still near you, the pose menu names them ("Choose a pose to hug ...") and the hug starts with them. To hug someone else, click **[PARTNER]** first, then choose the pose. Otherwise a list of people within 20 m opens: choose your partner.
+2. If your last partner is still near you, the pose menu names them ("Choose a pose to hug ...") and the hug starts with them. To hug someone else, click **[PARTNER]**: the list of people within 20 m opens. Choose someone, or **Forget** to clear the last partner, and the pose menu comes back. **[CANCEL]** closes the list and keeps the partner. If your last partner is not near you, the list opens after you choose the pose.
 3. Your partner gets a permission request to be animated. Only once they accept does the hug start: following, lowering, camera and both animations, and the full HUD opens. If they decline or do not answer within about a minute (they get one reminder), there is no hug.
 
 Each of you plays one animation of the pose: you play yours (the one you marked as yours when adding the pose, or the one that fits your avatar), your partner the other one. **Swap** (4) trades them any time. Hugs between any two avatars work the same way.
@@ -150,9 +150,10 @@ Every move with the arrows (5, 6) and every turn (12, 14) is saved automatically
 | Switch Lead | your partner leads and you follow them, or back (see below) |
 | SWAP | same as 4 |
 | Add Pose / Delete Pose / Rename Pose | manage poses, see [Poses and menus](quickyhug-poses.html) |
+| PG | hides the menu named **Adult** and everything in it, for you and your partner. The button shows the state: `PG: on` or `PG: off`. |
 | Help | same as 8 |
 
-Without a hug the dialog only shows the pose buttons and Help.
+Without a hug, open it from the pose menu with **[POSES] > Settings**. It then only shows the pose buttons, PG and Help.
 
 ## Switch Lead: let your partner walk
 
